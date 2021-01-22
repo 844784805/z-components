@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ZButtom @button-click='clickHandler'>按钮一</ZButtom>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ZButtom from './index';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ZButtom
+  },
+  methods: {
+    clickHandler() {
+      console.log('点击了按钮');
+    }
+  },
 }
 </script>
 

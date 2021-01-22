@@ -1,14 +1,18 @@
 {
   "name": "z-vue-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-components.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib --z-vue-components main ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
