@@ -1,17 +1,16 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <ZButtom @button-click='clickHandler'>按钮一</ZButtom>
+    <zButton @button-click='clickHandler'>按钮一</zButton>
+    
+    <a-button />
   </div>
 </template>
 
 <script>
-import ZButtom from './index';
+
 export default {
   name: 'App',
-  components: {
-    ZButtom
-  },
   methods: {
     clickHandler() {
       console.log('点击了按钮');

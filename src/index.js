@@ -1,7 +1,8 @@
-import ZButton from '@/components/z-button/zButton.vue';
+import zButton from '@/components/z-button/zButton.vue';
 const components = [
-  ZButton
+  zButton
 ]
+// console.log(ZButton);
 
 const install = (Vue) => {
   components.map(component => {
@@ -9,7 +10,7 @@ const install = (Vue) => {
   })
 }
 
-export default{
+export default {
   install,
-  ZButton
+  zButton
 }

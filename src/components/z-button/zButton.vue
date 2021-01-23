@@ -4,6 +4,7 @@
 
 <script>
   export default {
+    name:"zButton",
     props: {
       text: {
         type: String,
