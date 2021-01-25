@@ -10,7 +10,10 @@ const install = (Vue) => {
   })
 }
 
-export default {
+export {
   install,
   zButton
+}
+export default {
+  install
 }

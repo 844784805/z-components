@@ -1,12 +1,13 @@
 {
   "name": "zsh-vue-components",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": false,
-  "main": "dist/vue-components.js",
+  "main": "dist/zsh-vue-components.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib --name zsh-vue-components ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

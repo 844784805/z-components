@@ -7,7 +7,8 @@ Vue.config.productionTip = false
 import zCom from './index.js';
 Vue.use(zCom)
 console.log(zCom.zButton);
-// Vue.component('a-button',zButton)
+import {zButton} from './index.js';
+Vue.component('a-button',zButton)
 new Vue({
   render: h => h(App),
 }).$mount('#app')
