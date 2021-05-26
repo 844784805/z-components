@@ -9,6 +9,8 @@ Vue.use(zCom)
 console.log(zCom.zButton);
 import {zButton} from './index.js';
 Vue.component('a-button',zButton)
+
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
