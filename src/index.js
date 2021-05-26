@@ -1,6 +1,8 @@
 import zButton from '@/components/z-button/zButton.vue';
+import RollNum from './components/roll-num/index.vue';
 const components = [
-  zButton
+  zButton,
+  RollNum
 ]
 // console.log(ZButton);
 

@@ -4,6 +4,7 @@
     <zButton @button-click='clickHandler'>按钮一</zButton>
     <div class="box" :style="styleVar"></div>
     <zLayout :height=100 />
+    <RollNum />
     <a-button />
   </div>
 </template>
@@ -36,7 +37,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -23,22 +23,19 @@
       }
     },
     methods: {
-      translate(obj) {
-        const arr = [].repeat(null,11)
-        Object.entries(obj).forEach(([key, value] ) => {
-          console.log('index',key);
-          console.log('index1',value);
-          arr[key-1] = value
-        })
-        return arr
-      }
+      // translate(obj) {
+      //   const arr = new Array(11)
+      //   console.log(arr);
+      //   Object.entries(obj).forEach(([key, value] ) => {
+      //     console.log('index',key);
+      //     console.log('index1',value);
+      //     arr[key-1] = value
+      //   })
+      //   return arr
+      // }
     },
     mounted () {
-      const obj = {
-        1:200, 2:140, 5:400
-      }
-      
-      console.log(this.translate(obj));
+    
     },
   }
 </script>
